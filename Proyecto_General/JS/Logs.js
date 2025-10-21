@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modalDate.textContent = new Date(
       update.Fecha_Publicacion
     ).toLocaleDateString();
-    modalImage.src = update.Imagen || "https://placehold.co/1200x600/png";
+    modalImage.src = update.Imagen;
     modalImage.alt = update.Titulo;
     modalDetail.textContent = update.Texto_Detallado;
 

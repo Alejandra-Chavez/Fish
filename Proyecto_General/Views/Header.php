@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/Header.css">
-    <title>Document</title>
+    <script src="../JS/Header.js" defer></script>
+    <title>Header</title>
 </head>
+
 <body>
-        <header>
+    <header>
         <div class="left-buttons">
             <a class="Link" href="../Views/PrincipalPage.php">Página principal</a>
-            <a class="Link" href="../Views/PrincipalPage.php">Cerrar sesión</a>
+            <button class="Link logout-btn">Cerrar sesión</button>
         </div>
 
         <div class="center-logo">
@@ -20,13 +23,30 @@
             </a>
         </div>
 
-
         <nav class="right-links">
+            <a class="card admin-btn" href="CRUD.php">ADMIN</a>
             <a class="Link" href="Shop.php">Tienda</a>
             <a class="Link" href="Credits.php">Créditos</a>
             <a class="Link" href="Game.php">Juego</a>
-            <a class="Link" href="Profile.php">Perfil</a>
+            <a class="ProfileLink" href="../Views/Profile.php">
+                <div class="ProfileDisplay">
+                    <img src="" alt="Foto de perfil" class="ImgProfile">
+                    <p class="NombreProfile"></p>
+                </div>
+            </a>
         </nav>
     </header>
+
+    <!-- Modal de confirmación -->
+    <div id="logoutModal" class="logout-modal">
+        <div class="logout-content">
+            <h3>¿Seguro que quieres cerrar tu sesión actual?</h3>
+            <div class="logout-buttons">
+                <button id="confirmLogout" class="confirm">Sí, cerrar sesión</button>
+                <button id="cancelLogout" class="cancel">Cancelar</button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
