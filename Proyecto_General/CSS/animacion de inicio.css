@@ -159,3 +159,24 @@ body {
     font-size: 22px;
   }
 }
+.acceso-dev {
+  margin-top: 10px;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.final .acceso-dev {
+  opacity: 1;
+}
+
+.acceso-dev a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+.acceso-dev a:hover {
+  color: #3bb273;
+}
