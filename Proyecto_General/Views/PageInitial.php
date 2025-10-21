@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fish Stack</title>
-  <link rel="stylesheet" href="animacion de inicio.css">
+  <link rel="stylesheet" href="PAnimation.css">
 </head>
 <body>
   <div class="contenedor" id="animacion">
